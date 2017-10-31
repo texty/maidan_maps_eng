@@ -1,0 +1,113 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: $main-serif;
+    font-size: 100%;
+    color: $main-text;
+    width: 100%;
+    /*footer height plus padding*/
+    margin-bottom: 200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:link {
+        text-decoration: none;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+    &.dotted {
+    /*for links*/
+    color: #eeeeee;
+    border-bottom: 2px dotted #cccccc; }
+}
+
+
+h1 {
+  @media #{$brk-xxlarge} {
+    @include text(7em, 1.2em, 800);
+  }
+  @media #{$brk-xlarge} {
+    @include text(6em, 1.2em, 800);
+  }
+  @media #{$brk-large} {
+    @include text(4em, 1.2em, 800);
+  }
+  @media #{$brk-narrow} {
+    @include text(3.5em, 1.4em, 800);
+  }
+  @media #{$brk-spnarrow} {
+    @include text(2.4em, 1.4em, 800);
+  }
+}
+
+
+h2 {
+  margin-top: 10em;
+  padding-bottom: 1em;
+  @media #{$brk-xlarge} {
+    @include text(2.5em, 1.7em, 800);
+  }
+  @media #{$brk-large} {
+     @include text(2.1em, 1.8em, bold);
+  }
+  @media #{$brk-medium} {
+     @include text(1.8em, 1.8em, bold);
+  }
+  @media #{$brk-spnarrow} {
+     @include text(1.7em, 1.8em, bold);
+  }
+}
+
+
+h3 {
+  margin-top: 1 em;
+  @media #{$brk-xlarge} {
+    @include text(2em, 2.3em, 800);
+  }
+  @media #{$brk-large} {
+     @include text(1.8em, 2em, bold);
+  }
+  @media #{$brk-medium} {
+     @include text(1.7em, 1.8em, bold);
+  }
+  @media #{$brk-spnarrow} {
+     @include text(1.6em, 1.7em, bold);
+  }
+}
+
+
+p,li {
+  @media #{$brk-xxlarge} {
+    @include text(2.3em, 2em, 300);
+  }
+  @media #{$brk-xlarge} {
+    @include text(2.1em, 2em, 300);
+  }
+  @media #{$brk-large} {
+    @include text(1.5em, 1.8em, 300);
+  }
+  @media #{$brk-medium} {
+     @include text(1.5em, 1.6em, 300);
+  }
+  @media #{$brk-spnarrow} {
+     @include text(1.4em, 1.6em, 300);
+  }
+  padding-bottom: 1.5em;
+}
+
+
+li {
+  padding-bottom: 0.5em;
+}
+
+
+ul {
+  list-style-type: none;
+  margin-left: -30px;
+}

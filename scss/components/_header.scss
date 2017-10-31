@@ -1,0 +1,39 @@
+/* ======== HEADER ======== */
+
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 15px 0px 0px 35px;
+    z-index: 100000000;
+}
+
+.logo-note {
+  margin-top: 45px; 
+}
+
+.social-icons {
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.fa-twitter,
+.fa-facebook {
+  color: #bdbdbd;
+  margin: 25px 25px 0px 25px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border:1px solid #bdbdbd;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+  user-select: none;
+  &:hover{
+    color: #ffffff;
+    border:1px solid #ffffff;
+    text-decoration: none;
+  }
+}
