@@ -265,7 +265,7 @@ d3.json("data/all-killed.geojson", function(err, geodata) {
         div.transition()
           .duration(200)
           .style("opacity", .9);
-        div.html("<b>" + d.properties.name + "</b>" + "<br>" + "<b>Загинув(ла):</b> " + d.properties.tooltip + "<br>" + "<b>Місце смерті: </b>" + d.properties.place_cert)
+        div.html("<b>" + d.properties.name + "</b>" + "<br>" + "<b>Died:</b> " + d.properties.tooltip + "<br>" + "<b>Place of death: </b>" + d.properties.place_cert)
           .style("left", function() {
             if (d3.event.pageX >= screen_width - 130 ) {
               return d3.event.pageX - 130 + "px"
@@ -472,11 +472,11 @@ $('#one').waypoint(function(direction) {
   stopVideo();
   $(".mapboxgl-popup").remove();
   showKilling("2014-01-01 14:00:00","2014-01-23 14:00:00", false);
-  createPopup([30.5299169, 50.4505057], 'Нігоян, Сеник, Жизневський');
-  createPopup([30.524515,50.449412], 'територія Майдану');
-  createPopup([30.536166,50.446939], 'територія силовиків і Антимайдану');
+  createPopup([30.5299169, 50.4505057], 'Nihoyan, Senyk, Zhyznevskyy');
+  createPopup([30.524515,50.449412], 'territory of Maidan');
+  createPopup([30.536166,50.446939], 'the territory of the security forces and Anti-Maidan');
   if (direction === 'up') {
-      playVideo("http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4", "Відео Влада Казакова")
+      playVideo("http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4", "Video by Vlad Kazakov")
       animateFly(map_center, zoom_size, 0, 0);
       map.setPaintProperty('barricade', 'line-opacity', 0);
   }
@@ -485,8 +485,8 @@ $('#one').waypoint(function(direction) {
 
 $('#two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
-  createPopup([30.528463,50.451366], 'барикади');
-  createPopup([30.535909,50.447964], 'шеренги силовиків');
+  createPopup([30.528463,50.451366], 'barricades');
+  createPopup([30.535909,50.447964], 'rank of security officials');
   if (direction === 'down') {
     map.setPaintProperty('barricade', 'line-opacity', 0.8);
   } else if (direction === 'up') {
@@ -515,7 +515,7 @@ $('#four').waypoint(function(direction) {
   if(direction === 'down') {
     map.setFilter('fights', ['==', 'time', 1012 ]);
     window.setTimeout(function() {
-        createPopup([30.534752, 50.445804], 'сутички');
+        createPopup([30.534752, 50.445804], 'fights');
         map.setPaintProperty('fights', 'line-opacity', 1);
     }, 2500);
   }
@@ -524,7 +524,7 @@ $('#four').waypoint(function(direction) {
 
 $('#five').waypoint(function(direction) {
   attackLine("#650149", ["bline_181012"]);
-  createPopup([30.535651, 50.446638], 'колона силовиків');
+  createPopup([30.535651, 50.446638], 'column of security officials');
   if (direction === 'up') {
     showBuildings('181012');
     morph("geo181320", ["mariinka"]);
@@ -569,9 +569,9 @@ $('#nine').waypoint(function(direction) {
   $(".fight-path, .mapboxgl-popup").remove();
   morph("geo181320", ["maidan", "mariinka"]);
   attackLine("#650149", ["lypska", "oplot"]);
-  createPopup([30.543557, 50.443881], 'атака Оплоту');
-  createPopup([30.534039, 50.443346], 'наступ «беркутівців»');
-  createPopup([30.534708, 50.445689], 'атака «беркутівців»');
+  createPopup([30.543557, 50.443881], 'the "Oplot" attack');
+  createPopup([30.534039, 50.443346], 'the “Berkut” offensive');
+  createPopup([30.534708, 50.445689], 'the “Berkut” attack');
   var new_filter = [ "in", 'time', 1012, 1140]
   map.setFilter('fights', new_filter);
 },{ offset: 250 });
@@ -581,7 +581,7 @@ $('#ten').waypoint(function(direction) {
   morph("geo181340", ["maidan", "mariinka"]);
   $(".mapboxgl-popup, #oplot").remove();
   attackLine("#650149", ["pidkriplennia"]);
-  createPopup([30.535995, 50.444863], 'розділена колона мітингувальників');
+  createPopup([30.535995, 50.444863], 'split column of protesters');
 },{ offset: 250 });
 
 
@@ -597,7 +597,7 @@ $('#twelve').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   morph("geo181415", ["mariinka"]);
   attackLine("#650149", ["mariinka-titushky", "mariinka-vv"]);
-  createPopup([30.541488,50.445151], "м'ясорубка в Маріїнському парку");
+  createPopup([30.541488,50.445151], "bloodbath in Mariyinskyi park");
   var new_filter = [ "in", 'time', 1012, 1140, 1400, 1410 ]
   map.setFilter('fights', new_filter);
 },{ offset: 150 });
@@ -691,9 +691,9 @@ $('#twenty-one').waypoint(function(direction) {
   $(".mapboxgl-popup, .fight-path").remove();
   morph("geo181610", ["maidan", "berkut"]);
   map.getSource('barricade-data').setData("data/lines_181610.geojson");
-  createPopup([30.521186, 50.446151], "майданівці займають КМДА");
+  createPopup([30.521186, 50.446151], "protesters occupy the building of the Kyiv City State Administration");
   showBuildings('181920');
-  createPopup([30.528872, 50.447983], "штурм барикади на Інститутській");
+  createPopup([30.528872, 50.447983], "storming the barricades on the Instytutska street");
   map.setFilter('fights', [ "in", 'time', 1610 ]);
 },{ offset: 150 });
 
@@ -701,8 +701,8 @@ $('#twenty-one').waypoint(function(direction) {
 $('#twenty-two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-18 16:00:01","2014-02-18 16:15:00", false);
-  createPopup([30.5289244, 50.4480053], 'Дворянець, Хурція');
-  createPopup([30.515834, 50.445087], 'Зайко');
+  createPopup([30.5289244, 50.4480053], 'Dvoryanets, Hurtsiya');
+  createPopup([30.515834, 50.445087], 'Zayko');
 },{ offset: 150 });
 
 
@@ -723,8 +723,8 @@ $('#twenty-four').waypoint(function(direction) {
 
 $('#twenty-five').waypoint(function(direction) {
   showKilling("2014-02-18 16:15:01", "2014-02-18 17:25:00", false);
-  createPopup([30.5258614, 50.4514723], 'Третяк, Теплюк');
-  createPopup([30.5254161, 50.4520734], 'Прохорчук');
+  createPopup([30.5258614, 50.4514723], 'Tretyak, Tepliuk');
+  createPopup([30.5254161, 50.4520734], 'Prokhorchuk');
 },{ offset: 150 });
 
 
@@ -760,8 +760,8 @@ $('#twenty-eight').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   animateFly([30.522290,50.450731], zoom_size*1.07, 20, 0);
   showKilling("2014-02-18 19:00:01", "2014-02-18 19:59:00", false);
-  createPopup([30.52468283519492, 50.450512220079837], 'Бондарев, Плеханов');
-  createPopup([30.5243795, 50.450093], 'Брезденюк');
+  createPopup([30.52468283519492, 50.450512220079837], 'Bondarev, Plekhanov');
+  createPopup([30.5243795, 50.450093], 'Brezdeniuk');
 },{ offset: 350 });
 
 
@@ -793,7 +793,7 @@ $('#thirty-two').waypoint(function(direction) {
 $('#thirty-three').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-18 22:30:01","2014-02-18 23:00:00", false);
-  createPopup([30.5247509, 50.4505398], 'Кульчицький, Швець, Бойків');
+  createPopup([30.5247509, 50.4505398], 'Kulchytskyy, Shvets, Boykiv');
 },{ offset: 100 });
 
 
@@ -829,7 +829,7 @@ $('#thirty-six').waypoint(function(direction) {
 $('#thirty-seven').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-18 23:55:01", "2014-02-19 00:15:00", true);
-  createPopup([30.524737, 50.450870], 'пожежа у Будинку профспілок');
+  createPopup([30.524737, 50.450870], 'fire in the House of Trade Unions');
   map.setFilter('fights', [ "in", 'time', 2100, 190100 ]);
 },{ offset: 100 });
 
@@ -865,7 +865,7 @@ $('#forty').waypoint(function(direction) {
 $('#forty-one').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-19 01:00:01", "2014-02-19 02:10:00", false);
-  createPopup([30.524320854186136, 50.450851057984273], 'Цвігун, Топій, Клітинський');
+  createPopup([30.524320854186136, 50.450851057984273], 'Tsvihun, Topiy, Klitynskyi');
   if (direction == "up") {
     morph("geo181645", ["maidan", "berkut"]);
     d3.select("#church").attr("opacity", 0.2);
@@ -926,7 +926,7 @@ $('#forty-six').waypoint(function(direction) {
 
 $('#forty-seven').waypoint(function(direction) {
   morph("geo191400", ["maidan"]);
-  createPopup([30.525384, 50.448231], 'Мітингувальники захопили консерваторію');
+  createPopup([30.525384, 50.448231], 'protesters seized the conservatoire');
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
@@ -980,7 +980,7 @@ $('#fifty-two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-20 08:50:01", "2014-02-20 08:59:34", false);
   map.setFilter('fights', [ "in", 'time', 2100, 200900 ]);
-  createPopup([30.526180374466549, 50.449740482901902], 'Балюк, Арутюнян');
+  createPopup([30.526180374466549, 50.449740482901902], 'Baliuk, Harutyunyan');
   map.getSource('barricade-data').setData("data/lines_200900.geojson");
   morph("geo200900", ["maidan", "berkut", "chorna-rota"]);
   d3.select("#chorna-rota").attr("opacity", 0);
@@ -991,7 +991,7 @@ $('#fifty-three').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   d3.select("#chorna-rota").attr("opacity", 0.9).style("fill", "#000000").style("stroke", "#fee391").style("filter", "url(#blur)");
   showKilling("2014-02-20 08:59:35", "2014-02-20 09:00:37", true);
-  createPopup([30.528248, 50.449275], 'Поява чорної роти');
+  createPopup([30.528248, 50.449275], 'Appearance of "The Black Uniforms"');
   if(direction === "up") {
     morph("geo200900", ["maidan", "berkut", "chorna-rota"]);
   }
@@ -1051,8 +1051,8 @@ $('#sixty').waypoint(function(direction) {
   morph("geo200910", ["chorna-rota"]);
   map.setFilter('fights', [ "in", 'time', 2100, 200900, 200910 ]);
   showKilling("2014-02-20 09:08:35", "2014-02-20 09:11:55", false);
-  createPopup([30.527103533328003, 50.449944021296972], 'Коцюба, Братушка');
-  createPopup([30.526766501661189, 50.449829978298638], 'Ільків');
+  createPopup([30.527103533328003, 50.449944021296972], 'Kotsiuba, Bratushka');
+  createPopup([30.526766501661189, 50.449829978298638], 'Ilkiv');
 },{ offset: 150 });
 
 
@@ -1087,7 +1087,7 @@ $('#sixty-four').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   morph("geo200919", ["maidan","berkut","chorna-rota"]);
   showKilling("2014-02-20 09:15:41", "2014-02-20 09:18:08", false);
-  createPopup([30.527153468447487, 50.449888581575465], 'Аксенін, Мойсей, Тарасюк');
+  createPopup([30.527153468447487, 50.449888581575465], 'Aksenin, Moysey, Tarasiuk');
 },{ offset: 150 });
 
 
@@ -1130,7 +1130,7 @@ $('#sixty-eight').waypoint(function(direction) {
 $('#sixty-nine').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-20 09:26:01", "2014-02-20 09:28:00", false);
-  createPopup([30.528612462947695, 50.448532866121219], 'Дзявульський, Кемський, Опанасюк');
+  createPopup([30.528612462947695, 50.448532866121219], 'Dziavulskyi, Kemskyi, Opanasiuk');
   if (direction === "up") {
     morph("geo200921", ["maidan","berkut","chorna-rota"]);
   }
@@ -1151,25 +1151,25 @@ $('#seventy-one').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-20 09:29:41", "2014-02-20 09:47:11", false);
    map.setFilter('fights', [ "in", 'time', 2100, 200900, 200925]);
-  createPopup([30.528949480304266, 50.448046761295394], 'Гриневич, Жиловага');
-  createPopup([30.528334370230827, 50.448306019834526], 'Ушневич, Жеребний, Варениця, Точин');
+  createPopup([30.528949480304266, 50.448046761295394], 'Hryneych, Zhalovaha');
+  createPopup([30.528334370230827, 50.448306019834526], 'Ushnevych, Zherebnyy, Varenytsia, Tochyn');
 },{ offset: 200 });
 
 
 $('#seventy-two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-20 09:47:12", "2014-02-20 09:56:28", false);
-  createPopup([30.528439171999914, 50.448190345594632], 'Паращук, Ткачук, Зубенко, Пантелєєв, Голоднюк, Гурик');
+  createPopup([30.528439171999914, 50.448190345594632], 'Parashchuk, Tkachuk, Zubenko, Panteleyev, Holodniuk, Huryk');
 },{ offset: 200 });
 
 
 $('#seventy-three').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-20 09:56:29", "2014-02-20 11:29:54",false);
-  createPopup([30.526485293253895, 50.449354803550193], 'Полянський');
-  createPopup([30.52885167800893, 50.447952269965796], 'Шилінг');
-  createPopup([30.528407731469191, 50.448185896579758], 'Паньків, Царьок, Чміленко, Чаплінський, Котляр');
-  createPopup([30.529006812684287, 50.44817776032658], 'Храпаченко');
+  createPopup([30.526485293253895, 50.449354803550193], 'Polyanskyi');
+  createPopup([30.52885167800893, 50.447952269965796], 'Shyling');
+  createPopup([30.528407731469191, 50.448185896579758], 'Pankiv, Tsaryok, Chmilenko, Chaplinskyi, Kotliar');
+  createPopup([30.529006812684287, 50.44817776032658], 'Khrapchenko');
   if (direction === "up") {
     animateFly([30.527048, 50.448768], zoom_size*1.17, 10, 10);
   }
