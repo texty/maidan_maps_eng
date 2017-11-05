@@ -341,7 +341,7 @@
         "visibility": "visible",
         "text-rotation-alignment": "map",
         "text-pitch-alignment": "viewport",
-        "text-field": "{name}"
+        "text-field": "{name_en}"
       },
       "paint": {
         "text-color": "rgba(86, 85, 85, 1)",
