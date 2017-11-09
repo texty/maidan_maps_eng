@@ -625,7 +625,7 @@ $('#fourteen').waypoint(function(direction) {
 
 $('#fifteen').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Леонід Бібік намагається розчистити дорогу за допомогою міліцейського ГАЗу. Відео Павла Кучера", "img/minimap-gas-kriposnyi.png"); 
+    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
   } else if (direction === 'up') {
     stopVideo();
   }
@@ -637,7 +637,7 @@ $('#sixteen').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", " Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
+    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
   }
 },{ offset: 350 });
 
