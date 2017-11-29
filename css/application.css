@@ -133,7 +133,6 @@ ul {
 /* ======== HEADER ======== */
 .logo {
   position: fixed;
-  float: left;
   margin: 15px 0px 0px 35px;
   z-index: 100000000; }
 
@@ -599,5 +598,17 @@ div.tooltip {
   opacity: 0;
   pointer-events: none;
   width: 5px; }
+
+.cont {
+  display: inline-flex;
+  justify-content: space-between; }
+
+.ukr-eng {
+  font-size: 2em;
+  font-weight: bold;
+  color: #faa51b;
+  opacity: 0.7; }
+  .ukr-eng:hover {
+    color: #ffffff; }
 
 /*# sourceMappingURL=application.css.map */
