@@ -486,7 +486,7 @@ $('#one').waypoint(function(direction) {
 $('#two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   createPopup([30.528463,50.451366], 'barricades');
-  createPopup([30.535909,50.447964], 'rank of security officials');
+  createPopup([30.535909,50.447964], 'rows of special forces');
   if (direction === 'down') {
     map.setPaintProperty('barricade', 'line-opacity', 0.8);
   } else if (direction === 'up') {
