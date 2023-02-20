@@ -476,7 +476,7 @@ $('#one').waypoint(function(direction) {
   createPopup([30.524515,50.449412], 'territory of Maidan');
   createPopup([30.536166,50.446939], 'the territory of the security forces and Anti-Maidan');
   if (direction === 'up') {
-      playVideo("http://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4", "Video by Vlad Kazakov")
+      playVideo("https://texty.org.ua/video/maidan_maps/maidan-bg-blacked.mp4", "Video by Vlad Kazakov")
       animateFly(map_center, zoom_size, 0, 0);
       map.setPaintProperty('barricade', 'line-opacity', 0);
   }
@@ -547,7 +547,7 @@ $('#seven').waypoint(function(direction) {
   if (direction === 'down') {
     $("#hint, #video-map, #video-note").animate({ opacity: 1 }, 300 );
     $("#video-filter").animate({ opacity: 0.35 }, 300 );
-    playVideo("http://texty.org.ua/video/maidan_maps/mariinka-start.mp4", "Start of the confrontation in Mariyinskyi park. Video by Denys Artemiev", "img/minimap-mariinka-start.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/mariinka-start.mp4", "Start of the confrontation in Mariyinskyi park. Video by Denys Artemiev", "img/minimap-mariinka-start.png");
   } else if (direction === 'up') {
     stopVideo();
     $("#hint, #video-map, #video-filter").animate({ opacity: 0 }, 300 );
@@ -560,7 +560,7 @@ $('#eight').waypoint(function(direction) {
     stopVideo();
     $("#hint").animate({ opacity: 0 }, 300 );
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/mariinka-start.mp4", "Start of the confrontation in Mariyinskyi park. Video by Denys Artemiev", "img/minimap-mariinka-start.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/mariinka-start.mp4", "Start of the confrontation in Mariyinskyi park. Video by Denys Artemiev", "img/minimap-mariinka-start.png");
   }
 },{ offset: 250 });
 
@@ -605,7 +605,7 @@ $('#twelve').waypoint(function(direction) {
 
 $('#thirteen').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/grushevskogo9.mp4", "«Titushky» and security forces finishing off the wounded protesters  near the house at Hrushevskoho 9. Video by Oleg V.", "img/minimap-grushevskogo9.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/grushevskogo9.mp4", "«Titushky» and security forces finishing off the wounded protesters  near the house at Hrushevskoho 9. Video by Oleg V.", "img/minimap-grushevskogo9.png");
   } else if (direction === 'up') {
     stopVideo();
   }
@@ -618,14 +618,14 @@ $('#fourteen').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/grushevskogo9.mp4", "«Titushky» and security forces finishing off the wounded protesters  near the house at Hrushevskoho 9. Video by Oleg V.", "img/minimap-grushevskogo9.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/grushevskogo9.mp4", "«Titushky» and security forces finishing off the wounded protesters  near the house at Hrushevskoho 9. Video by Oleg V.", "img/minimap-grushevskogo9.png");
   }
 },{ offset: 350 });
 
 
 $('#fifteen').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
   } else if (direction === 'up') {
     stopVideo();
   }
@@ -637,7 +637,7 @@ $('#sixteen').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/gas-kriposnyi.mp4", "Leonid Bibik tries to clear the road with police car «ГАЗ» . Video by Pavel Kuchera", "img/minimap-gas-kriposnyi.png");
   }
 },{ offset: 350 });
 
@@ -671,7 +671,7 @@ $('#eighteen').waypoint(function(direction) {
 
 $('#nineteen').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/shovkovychna.mp4", "Confrontation  at the crossroads of Instytutska-Shovkovychna. Video by Maksym Kudymets", "img/minimap-shovkovychna.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/shovkovychna.mp4", "Confrontation  at the crossroads of Instytutska-Shovkovychna. Video by Maksym Kudymets", "img/minimap-shovkovychna.png");
   } else if (direction === 'up') {
     stopVideo(); 
   }
@@ -682,7 +682,7 @@ $('#twenty').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo(); 
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/shovkovychna.mp4", "Confrontation  at the crossroads of Instytutska-Shovkovychna. Video by Maksym Kudymets", "img/minimap-shovkovychna.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/shovkovychna.mp4", "Confrontation  at the crossroads of Instytutska-Shovkovychna. Video by Maksym Kudymets", "img/minimap-shovkovychna.png");
   }
 },{ offset: 350 });
 
@@ -743,7 +743,7 @@ $('#twenty-six').waypoint(function(direction) {
 
 $('#twenty-seven').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/btrs.mp4", "AV’s jam into the barricade. Video by Accidents news", "img/minimap-btrs.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/btrs.mp4", "AV’s jam into the barricade. Video by Accidents news", "img/minimap-btrs.png");
   } else if (direction === 'up') {
     stopVideo(); 
     animateFly(map_center, zoom_size, 0, 0);
@@ -755,7 +755,7 @@ $('#twenty-eight').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo(); 
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/btrs.mp4", "AV’s jam into the barricade. Video by Accidents news", "img/minimap-btrs.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/btrs.mp4", "AV’s jam into the barricade. Video by Accidents news", "img/minimap-btrs.png");
   }
   $(".mapboxgl-popup").remove();
   animateFly([30.522290,50.450731], zoom_size*1.07, 20, 0);
@@ -799,7 +799,7 @@ $('#thirty-three').waypoint(function(direction) {
 
 $('#thirty-four').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/anthem-18.mp4", "Storm of the barricades on February 18. Video by BABYLON'13", "img/minimap-anthem.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/anthem-18.mp4", "Storm of the barricades on February 18. Video by BABYLON'13", "img/minimap-anthem.png");
   } else if (direction === 'up') {
     stopVideo(); 
   }
@@ -810,7 +810,7 @@ $('#thirty-five').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo(); 
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/anthem-18.mp4", "Storm of the barricades on February 18. Video by BABYLON'13", "img/minimap-anthem.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/anthem-18.mp4", "Storm of the barricades on February 18. Video by BABYLON'13", "img/minimap-anthem.png");
   }
   $(".mapboxgl-popup").remove();
   showKilling("2014-02-18 23:00:01", "2014-02-18 23:50:00", true);
@@ -842,7 +842,7 @@ $('#thirty-eight').waypoint(function(direction) {
 
 $('#thirty-nine').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/unions-fire.mp4", "Rescue of the protesters from the Trade Unions House. Video by BABYLON'13", "img/minimap-unions-fire.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/unions-fire.mp4", "Rescue of the protesters from the Trade Unions House. Video by BABYLON'13", "img/minimap-unions-fire.png");
   } else if (direction === 'up') {
     stopVideo(); 
     animateFly([30.523568,50.449962], zoom_size*1.05, 10, 10);
@@ -854,7 +854,7 @@ $('#forty').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo(); 
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/unions-fire.mp4", "Rescue of the protesters from the Trade Unions House. Video by BABYLON'13", "img/minimap-unions-fire.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/unions-fire.mp4", "Rescue of the protesters from the Trade Unions House. Video by BABYLON'13", "img/minimap-unions-fire.png");
   }
   $(".mapboxgl-popup").remove();
   animateFly([30.523568,50.449962], zoom_size*1.1, 10, 10);
@@ -882,7 +882,7 @@ $('#forty-two').waypoint(function(direction) {
 
 $('#forty-three').waypoint(function(direction) {
    if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/explosions-18.mp4", "Barricades in fire.Video by BABYLON'13", "img/minimap-explosions-18.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/explosions-18.mp4", "Barricades in fire.Video by BABYLON'13", "img/minimap-explosions-18.png");
   } else if (direction === 'up') {
     stopVideo(); 
     map.setFilter('fights', [ "in", 'time', 2100, 190100 ]);
@@ -896,7 +896,7 @@ $('#forty-four').waypoint(function(direction) {
    if (direction === 'down') {
     stopVideo(); 
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/explosions-18.mp4", "Barricades in fire.Video by BABYLON'13", "img/minimap-explosions-18.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/explosions-18.mp4", "Barricades in fire.Video by BABYLON'13", "img/minimap-explosions-18.png");
   }
 },{ offset: 350 });
 
@@ -914,7 +914,7 @@ $('#forty-five').waypoint(function(direction) {
 $('#forty-six').waypoint(function(direction) {
   if (direction === 'down') {
     map.setFilter('fights', [ "in", 'time', 2100 ]);
-    playVideo("http://texty.org.ua/video/maidan_maps/day-19.mp4", "Morning at Maidan, Fabruary 19. Video by BABYLON'13", "img/minimap-day-19.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/day-19.mp4", "Morning at Maidan, Fabruary 19. Video by BABYLON'13", "img/minimap-day-19.png");
   } else if (direction === 'up') {
      stopVideo();  
     $(".mapboxgl-popup").remove();
@@ -930,7 +930,7 @@ $('#forty-seven').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/day-19.mp4", "Morning at Maidan, Fabruary 19. Video by BABYLON'13", "img/minimap-day-19.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/day-19.mp4", "Morning at Maidan, Fabruary 19. Video by BABYLON'13", "img/minimap-day-19.png");
   }
 },{ offset: 350 });
 
@@ -959,7 +959,7 @@ $('#forty-nine').waypoint(function(direction) {
 
 $('#fifty').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/explosion-20.mp4", "Maidan tries to restore the positions. Between 8:00 and 9:00 p.m. January, 20. Video by Maidan 18-20 History", "img/minimap-explosion-20.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/explosion-20.mp4", "Maidan tries to restore the positions. Between 8:00 and 9:00 p.m. January, 20. Video by Maidan 18-20 History", "img/minimap-explosion-20.png");
   } else if (direction === 'up') {
      stopVideo();  
   }
@@ -971,7 +971,7 @@ $('#fifty-one').waypoint(function(direction) {
     stopVideo();
   } else if (direction === 'up') {
     morph("geo191400", ["maidan", "berkut"]);
-    playVideo("http://texty.org.ua/video/maidan_maps/explosion-20.mp4", "Maidan tries to restore the positions. Between 8:00 and 9:00 p.m. January, 20. Video by Maidan 18-20 History", "img/minimap-explosion-20.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/explosion-20.mp4", "Maidan tries to restore the positions. Between 8:00 and 9:00 p.m. January, 20. Video by Maidan 18-20 History", "img/minimap-explosion-20.png");
   }
 },{ offset: 350 });
 
@@ -1013,7 +1013,7 @@ $('#fifty-five').waypoint(function(direction) {
 
 $('#fifty-six').waypoint(function(direction) {
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/retreat-20.mp4", "The retreat of security forces to the government quarter. ~9:10 January, 20. Video by Maidan 18-20 History", "img/minimap-retreat-20.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/retreat-20.mp4", "The retreat of security forces to the government quarter. ~9:10 January, 20. Video by Maidan 18-20 History", "img/minimap-retreat-20.png");
   } else if (direction === 'up') {
      stopVideo();  
      morph("geo200905", ["maidan", "berkut","chorna-rota"]);
@@ -1025,7 +1025,7 @@ $('#fifty-seven').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/retreat-20.mp4", "The retreat of security forces to the government quarter. ~9:10 January, 20. Video by Maidan 18-20 History", "img/minimap-retreat-20.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/retreat-20.mp4", "The retreat of security forces to the government quarter. ~9:10 January, 20. Video by Maidan 18-20 History", "img/minimap-retreat-20.png");
   }
 },{ offset: 350 });
 
@@ -1064,7 +1064,7 @@ $('#sixty-one').waypoint(function(direction) {
 $('#sixty-two').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/instytutska-0913.mp4", "Sniper with yellow bandages shoot in the crowd. ~9:13 February, 20.Video by younube channel «Виновных покарают»", "img/minimap-instytutska-0913.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/instytutska-0913.mp4", "Sniper with yellow bandages shoot in the crowd. ~9:13 February, 20.Video by younube channel «Виновных покарают»", "img/minimap-instytutska-0913.png");
   } else if (direction === 'up') {
      stopVideo();  
   }
@@ -1078,7 +1078,7 @@ $('#sixty-three').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/instytutska-0913.mp4", "Sniper with yellow bandages shoot in the crowd. ~9:13 February, 20.Video by younube channel «Виновных покарают»", "img/minimap-instytutska-0913.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/instytutska-0913.mp4", "Sniper with yellow bandages shoot in the crowd. ~9:13 February, 20.Video by younube channel «Виновных покарают»", "img/minimap-instytutska-0913.png");
   }
 },{ offset: 350 });
 
@@ -1106,7 +1106,7 @@ $('#sixty-six').waypoint(function(direction) {
 $('#sixty-seven').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   if (direction === 'down') {
-    playVideo("http://texty.org.ua/video/maidan_maps/instytutska-0922.mp4", "Death of Andriy Dygdalovych,  09:22:51  February, 20. Video by BABYLON'13", "img/minimap-instytutska-0922.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/instytutska-0922.mp4", "Death of Andriy Dygdalovych,  09:22:51  February, 20. Video by BABYLON'13", "img/minimap-instytutska-0922.png");
   } else if (direction === 'up') {
      stopVideo(); 
      map.setFilter('fights', [ "in", 'time', 2100, 200900, 200910 ]);
@@ -1122,7 +1122,7 @@ $('#sixty-eight').waypoint(function(direction) {
     animateFly([30.527048, 50.448768], zoom_size*1.17, 10, 10);
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/instytutska-0922.mp4", "Death of Andriy Dygdalovych,  09:22:51  February, 20. Video by BABYLON'13", "img/minimap-instytutska-0922.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/instytutska-0922.mp4", "Death of Andriy Dygdalovych,  09:22:51  February, 20. Video by BABYLON'13", "img/minimap-instytutska-0922.png");
   }
 },{ offset: 350 });
 
@@ -1180,7 +1180,7 @@ $('#seventy-four').waypoint(function(direction) {
   $(".mapboxgl-popup").remove();
   if (direction === 'down') {
      animateFly([30.522290,50.450731], zoom_size*1.05, 20, 0);
-     playVideo("http://texty.org.ua/video/maidan_maps/instytutska-1001.mp4", "Epicenter of shootings  ~10:01 February, 20. Video by Taras Makarenko", "img/minimap-instytutska-1001.png");
+     playVideo("https://texty.org.ua/video/maidan_maps/instytutska-1001.mp4", "Epicenter of shootings  ~10:01 February, 20. Video by Taras Makarenko", "img/minimap-instytutska-1001.png");
   } else if (direction === 'up') {
      stopVideo();  
      morph("geo200929", ["maidan", "berkut"]);
@@ -1197,7 +1197,7 @@ $('#seventy-five').waypoint(function(direction) {
   if (direction === 'down') {
     stopVideo();
   } else if (direction === 'up') {
-    playVideo("http://texty.org.ua/video/maidan_maps/instytutska-1001.mp4", "Epicenter of shootings  ~10:01 February, 20. Video by Taras Makarenko", "img/minimap-instytutska-1001.png");
+    playVideo("https://texty.org.ua/video/maidan_maps/instytutska-1001.mp4", "Epicenter of shootings  ~10:01 February, 20. Video by Taras Makarenko", "img/minimap-instytutska-1001.png");
   }
 },{ offset: 350 });
 
